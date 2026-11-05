@@ -96,7 +96,7 @@ namespace PryIE2_Fuzzi_Programacion
                 cliente.Telefono = txtTelefono.Text;
                 cliente.Email = txtEmail.Text;
 
-                Dao.ActualizarCliente(cliente);
+                Dao.ActualizarCliente(cliente, idSeleccionado);
 
                 MessageBox.Show("Cliente actualizado", "Clientes", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -112,12 +112,10 @@ namespace PryIE2_Fuzzi_Programacion
         {
             DataGridViewRow fila = dgvClientes.Rows[e.RowIndex];
 
-            // Guarda el ID
             idSeleccionado = Convert.ToInt32(fila.Cells["IdCliente"].Value);
 
             txtIdCliente.Text = idSeleccionado.ToString();
 
-            // Carga datos en los TextBox
             txtNombre.Text = fila.Cells["Nombre"].Value.ToString();
 
             txtTelefono.Text = fila.Cells["Telefono"].Value.ToString();

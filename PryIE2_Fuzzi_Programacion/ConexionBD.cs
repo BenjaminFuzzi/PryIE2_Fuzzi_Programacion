@@ -17,7 +17,7 @@ namespace PruebaBD
         // Trusted_Connection=True -> Usa autenticación de Windows
         //string conexion =
         //"Server=localhost\\SQLEXPRESS;Database=NegocioDB;Trusted_Connection=True;";
-        private string cadenaConexion = @"Server=PC131;Database=LibreriaDB;Trusted_Connection=True;";
+        private string cadenaConexion = @"Server=Usuario-PC\SQLEXPRESS;Database=LibreriaDB;Trusted_Connection=True;";
 
         // Objeto SqlConnection:
         // representa la conexión física a SQL Server.
