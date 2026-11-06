@@ -47,5 +47,10 @@ namespace PryIE2_Fuzzi_Programacion
             proveedores.Show();
             this.Hide();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
