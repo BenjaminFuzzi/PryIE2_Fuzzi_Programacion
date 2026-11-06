@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductos));
             this.gbxDatos = new System.Windows.Forms.GroupBox();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
@@ -60,9 +61,9 @@
             this.gbxDatos.Controls.Add(this.lblDesc);
             this.gbxDatos.Controls.Add(this.lblID);
             this.gbxDatos.Location = new System.Drawing.Point(16, 33);
-            this.gbxDatos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbxDatos.Margin = new System.Windows.Forms.Padding(4);
             this.gbxDatos.Name = "gbxDatos";
-            this.gbxDatos.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbxDatos.Padding = new System.Windows.Forms.Padding(4);
             this.gbxDatos.Size = new System.Drawing.Size(484, 97);
             this.gbxDatos.TabIndex = 18;
             this.gbxDatos.TabStop = false;
@@ -71,7 +72,7 @@
             // txtStock
             // 
             this.txtStock.Location = new System.Drawing.Point(313, 63);
-            this.txtStock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtStock.Margin = new System.Windows.Forms.Padding(4);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(156, 22);
             this.txtStock.TabIndex = 12;
@@ -79,7 +80,7 @@
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(313, 25);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(156, 22);
             this.txtPrecio.TabIndex = 11;
@@ -87,7 +88,7 @@
             // txtDescripcion
             // 
             this.txtDescripcion.Location = new System.Drawing.Point(104, 63);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(153, 22);
             this.txtDescripcion.TabIndex = 8;
@@ -96,7 +97,7 @@
             // 
             this.txtIdProducto.Enabled = false;
             this.txtIdProducto.Location = new System.Drawing.Point(125, 25);
-            this.txtIdProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdProducto.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdProducto.Name = "txtIdProducto";
             this.txtIdProducto.Size = new System.Drawing.Size(104, 22);
             this.txtIdProducto.TabIndex = 7;
@@ -145,7 +146,7 @@
             // 
             this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProductos.Location = new System.Drawing.Point(17, 138);
-            this.dgvProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvProductos.Margin = new System.Windows.Forms.Padding(4);
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.RowHeadersWidth = 51;
             this.dgvProductos.Size = new System.Drawing.Size(792, 210);
@@ -155,7 +156,7 @@
             // btnConsultar
             // 
             this.btnConsultar.Location = new System.Drawing.Point(15, 356);
-            this.btnConsultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnConsultar.Margin = new System.Windows.Forms.Padding(4);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(121, 28);
             this.btnConsultar.TabIndex = 16;
@@ -166,7 +167,7 @@
             // btnAgregar
             // 
             this.btnAgregar.Location = new System.Drawing.Point(493, 356);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(100, 28);
             this.btnAgregar.TabIndex = 15;
@@ -177,7 +178,7 @@
             // btnActualizar
             // 
             this.btnActualizar.Location = new System.Drawing.Point(601, 356);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(100, 28);
             this.btnActualizar.TabIndex = 14;
@@ -188,7 +189,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Location = new System.Drawing.Point(709, 356);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(100, 28);
             this.btnEliminar.TabIndex = 13;
@@ -226,7 +227,8 @@
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmProductos";
             this.Text = "Productos";
             this.gbxDatos.ResumeLayout(false);
