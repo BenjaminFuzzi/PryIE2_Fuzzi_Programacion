@@ -52,5 +52,36 @@ namespace PryIE2_Fuzzi_Programacion
         {
 
         }
+
+        private void importarProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmImportaciones importaciones = new frmImportaciones();
+            importaciones.Show();
+            this.Hide();
+        }
+
+        private void productosConBajoStockToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBajoStock bajoStock = new frmBajoStock();
+            bajoStock.Show();
+            this.Hide();
+        }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(@"Nombre del Sistema: " + Environment.UserName +
+"\n Alumno: Benjamín Fuzzi." +
+"\n Comisión: Turno Noche." +
+"\n Año: " + Convert.ToString(DateTime.Now.Year) + "."
+,"Acerca de Proyecto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void nuevaVentaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNuevaVenta nuevaVenta = new frmNuevaVenta();
+            nuevaVenta.Show();
+            this.Hide();
+        }
     }
 }
