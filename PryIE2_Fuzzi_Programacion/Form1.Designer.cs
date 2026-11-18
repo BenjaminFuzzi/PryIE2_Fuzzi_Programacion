@@ -41,7 +41,6 @@
             this.historialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosConBajoStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesRegistradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -134,12 +133,12 @@
             this.historialToolStripMenuItem.Name = "historialToolStripMenuItem";
             this.historialToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.historialToolStripMenuItem.Text = "Historial";
+            this.historialToolStripMenuItem.Click += new System.EventHandler(this.historialToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.productosConBajoStockToolStripMenuItem,
-            this.clientesRegistradosToolStripMenuItem});
+            this.productosConBajoStockToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
             this.reportesToolStripMenuItem.Text = "Reportes";
@@ -150,12 +149,6 @@
             this.productosConBajoStockToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
             this.productosConBajoStockToolStripMenuItem.Text = "Productos con bajo stock";
             this.productosConBajoStockToolStripMenuItem.Click += new System.EventHandler(this.productosConBajoStockToolStripMenuItem_Click);
-            // 
-            // clientesRegistradosToolStripMenuItem
-            // 
-            this.clientesRegistradosToolStripMenuItem.Name = "clientesRegistradosToolStripMenuItem";
-            this.clientesRegistradosToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
-            this.clientesRegistradosToolStripMenuItem.Text = "Clientes registrados";
             // 
             // herramientasToolStripMenuItem
             // 
@@ -226,7 +219,6 @@
         private System.Windows.Forms.ToolStripMenuItem nuevaVentaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem historialToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productosConBajoStockToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clientesRegistradosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem herramientasToolStripMenuItem;

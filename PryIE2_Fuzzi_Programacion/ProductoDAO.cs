@@ -47,8 +47,7 @@ namespace PryIE2_Fuzzi_Programacion
         }
         public void EliminarProducto(int id)
         {
-            try
-            {
+            try {
                 string query = "DELETE FROM Productos WHERE IdProducto = @IdProducto";
 
                 SqlCommand comando =
@@ -58,16 +57,13 @@ namespace PryIE2_Fuzzi_Programacion
                 comando.ExecuteNonQuery();
 
                 conexion.CerrarConexion();
-            }
-            catch (SqlException e)
-            {
+            } catch (SqlException e) {
                 MessageBox.Show(e.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         public void ActualizarProducto(Producto producto, int id)
         {
-            try
-            {
+            try {
                 String query = "UPDATE Productos " +
                     "SET Descripcion=@Descripcion, Precio=@Precio, Stock=@Stock " +
                     "WHERE IdProducto=" + id;
@@ -79,9 +75,7 @@ namespace PryIE2_Fuzzi_Programacion
                 comando.ExecuteNonQuery();
 
                 conexion.CerrarConexion();
-            }
-            catch (SqlException e)
-            {
+            } catch (SqlException e) {
                 MessageBox.Show(e.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

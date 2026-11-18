@@ -83,5 +83,12 @@ namespace PryIE2_Fuzzi_Programacion
             nuevaVenta.Show();
             this.Hide();
         }
+
+        private void historialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHistorialVentas historialVentas = new frmHistorialVentas();
+            historialVentas.Show();
+            this.Hide();
+        }
     }
 }

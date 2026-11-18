@@ -28,7 +28,7 @@ namespace PryIE2_Fuzzi_Programacion
             conexion.CerrarConexion();
         }
 
-        public DataTable ObtenerProductos()
+        public DataTable ObtenerVentas()
         {
             try
             {
