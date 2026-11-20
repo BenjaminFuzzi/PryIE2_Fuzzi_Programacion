@@ -131,7 +131,9 @@ namespace PryIE2_Fuzzi_Programacion
             Int32 MaxStock = 0;
             if (cbxCliente.Text != string.Empty &&
                 cbxProducto.Text != string.Empty &&
-                txtCantidad.Text != string.Empty) {
+                txtCantidad.Text != string.Empty &&
+                Int32.TryParse(txtCantidad.Text,out Int32 y) ) {
+                
                 try {
                     string query = "SELECT Stock FROM Productos WHERE Descripcion = " + "'" + cbxProducto.Text + "'";
 
@@ -163,6 +165,8 @@ namespace PryIE2_Fuzzi_Programacion
                 } catch (SqlException X) {
                     MessageBox.Show(X.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            } else {
+                MessageBox.Show("Ingresar detalles válidos.", "Ventas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
